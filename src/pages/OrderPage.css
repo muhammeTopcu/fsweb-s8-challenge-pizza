@@ -1,0 +1,152 @@
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 6vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 6vh;
+  width: 50%;
+}
+
+.all header {
+  background-color: #ce2829;
+  width: 100%;
+  min-width: 390px;
+  padding: 2%;
+  text-align: center;
+}
+
+.sipCardBody {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-content: center;
+}
+
+.sipGenel {
+  padding: 30px;
+  border: #5f5f5f 0.5px solid;
+  border-radius: 10px;
+}
+
+.secimler,
+.toplam {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.secimler {
+  color: #5f5f5f;
+  padding-top: 15px;
+}
+
+.toplam {
+  color: #ce2829;
+}
+
+.sipButton {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.formText {
+  margin: 10px;
+}
+
+.boyut-hamur {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20%;
+  flex-wrap: wrap;
+}
+
+.pizza-onay {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sayac {
+  display: flex;
+}
+
+.sayacButon {
+  width: 50px;
+  height: 50px;
+  background-color: #fdc913;
+  font-weight: 600;
+  border-color: #fdc913;
+  font-size: 1.2rem;
+}
+
+.sayac button:nth-of-type(1) {
+  border-radius: 10px 0 0 10px;
+}
+
+.sayac button:nth-of-type(2) {
+  border-radius: 0 10px 10px 0px;
+}
+.sayac p {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  border: #5f5f5f 1px solid;
+  font-weight: 600;
+}
+
+.ustNava {
+  text-decoration: none;
+  color: rgb(207, 202, 202);
+  font-weight: 600;
+}
+
+.ustNava :hover {
+  text-decoration: none;
+  color: rgb(196, 184, 28);
+  font-weight: 600;
+}
+
+.ustNavactive {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.sipVerButon {
+  color: #fdc913;
+  height: 100%;
+  width: 100%;
+}
+
+.ekMalz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+.ekMalz div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
