@@ -1,0 +1,443 @@
+.main-page html,
+.main-page body {
+  background-color: #faf7f2;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.main-page html {
+  background-color: #faf7f2;
+}
+
+/* header */
+.main-page .header-section {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  background-image: url("/public/images/home-banner.png");
+  margin: auto;
+}
+.main-page .header-title {
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.main-page .header-subtitle {
+  color: #fdc913;
+  font-family: "Satisfy", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.main-page .header-message {
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 60px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.main-page .header-button {
+  border-radius: 20px;
+  background-color: #fdc913;
+  border: 0;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* NAV BAR */
+.main-page .nav-bar {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+}
+.main-page .nav-bar ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  gap: 10px;
+}
+.main-page .nav-bar ul a {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  gap: 0.5rem;
+}
+
+/* CONTAINER */
+.main-page .container {
+  display: flex;
+  gap: 20px;
+  width: 60%;
+  height: 300px;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+}
+.main-page .ozel-lezzetus h1 {
+  font-size: 3rem;
+  font-family: quattrocento;
+}
+.main-page .ozel-lezzetus {
+  width: 45%;
+  height: 300px;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 0 20px 0px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: url(public/assets/iteration-2/cta/kart-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 0;
+}
+.main-page .ozel-lezzetus h1 {
+  margin-top: 25px;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+.main-page .ozel-lezzetus h4 {
+  margin-top: 0px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+.main-page .right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 45%;
+  gap: 1rem;
+}
+
+.main-page .siparis-btn {
+  margin-top: 0px;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #ce2829;
+  font-weight: bold;
+  font-family: "roboto condensed";
+}
+.main-page .renk {
+  color: Red;
+}
+
+.main-page .hackathlon,
+.main-page .kurye {
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  font-family: "roboto condensed";
+  width: 100%;
+  line-height: 1;
+  height: 50%;
+}
+.main-page .hackathlon {
+  background-image: url(public/assets/iteration-2/cta/kart-2.png);
+  color: white;
+}
+.main-page .kurye {
+  background-image: url(public/assets/iteration-2/cta/kart-3.png);
+  color: #292929;
+}
+.main-page .kurye h1,
+.main-page .hackathlon h1 {
+  font-size: 20px;
+}
+
+/* MENU HEADER */
+.main-page .menus {
+  text-align: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.main-page .menus h3 {
+  font-family: "Satisfy", sans-serif;
+  color: #ce2829;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.main-page .menus h2 {
+  font-family: "Barlow", sans-serif;
+  color: #292929;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+/* MENU BUTTONS */
+.main-page .button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  gap: 8px;
+  margin: 0 auto;
+}
+.main-page .btn-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: none;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main-page .btn-btn:hover {
+  background-color: black;
+  color: white;
+}
+.main-page .btn-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* MENU CARDS */
+.main-page .cards-container {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-content: center;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.main-page .card {
+  background-color: white;
+  width: 32%;
+  padding: 15px;
+}
+.main-page .card h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.main-page .card img {
+  max-width: 100%;
+}
+.main-page .card-bot {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.main-page .score,
+.main-page .stock {
+  opacity: 0.5;
+}
+.main-page .price {
+  font-weight: bold;
+}
+
+/* FOOTER */
+.main-page footer {
+  background-color: #292929;
+  width: 100%;
+  color: white;
+  font-family: "Barlow", sans-serif;
+}
+.main-page .footer-top {
+  display: flex;
+  align-items: center;
+  max-width: 60%;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+.main-page .footer-logo {
+  margin: 0 20px 20px 0;
+}
+.main-page .contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-page .contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.main-page .footer-mid h3,
+.main-page .footer-right h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.main-page .footer-mid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-page .footer-mid ul li {
+  margin-bottom: 10px;
+}
+.main-page .footer-link {
+  color: white;
+  text-decoration: none;
+}
+.main-page .footer-mid,
+.main-page .footer-right {
+  margin-top: 80px;
+}
+.main-page .instagram {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.main-page .instagram img {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+}
+.main-page .footer-bottom {
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-between;
+}
+.main-page .footer-bottom {
+  border-top: 1px solid #5f5f5f;
+  padding: 20px 20% 0 20%;
+  display: flex;
+  margin-bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  font-family: "Barlow", sans-serif;
+}
+
+/* RESPONSIVE FOR 540px */
+@media (max-width: 540px) {
+  .main-page .header-subtitle {
+    display: none;
+  }
+  .main-page .header-message {
+    font-size: 5.375rem;
+    line-height: 5.75rem;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-page .header-message span {
+    display: block;
+  }
+  .main-page .header-message br {
+    display: none;
+  }
+  .main-page .nav-bar ul {
+    gap: 30px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-page .container {
+    flex-direction: column;
+    align-items: stretch;
+    height: 60%;
+    width: 80%;
+  }
+  .main-page .kurye {
+    width: 100%;
+    height: 50%;
+    margin: 15px auto;
+  }
+  .main-page .ozel-lezzetus {
+    width: 100%;
+    height: 100%;
+  }
+  .main-page .hackathlon {
+    height: 50%;
+  }
+
+  .main-page .right-container {
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  .main-page .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-page .cards-container {
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .main-page .card {
+    width: 100%;
+  }
+
+  .main-page .card img {
+    width: 100%;
+    height: auto;
+  }
+  .main-page footer {
+    padding: 40px 0 10px 0;
+  }
+  .main-page .footer-top {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .main-page .instagram img {
+    width: 80%;
+    height: auto;
+  }
+  .main-page .footer-mid,
+  .main-page .footer-right {
+    margin-top: 20px;
+  }
+  .main-page .footer-left,
+  .main-page .footer-mid,
+  .main-page .footer-right {
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import {
   Button,
   Card,
@@ -113,14 +113,21 @@ export default function OrderPage() {
   }, [pizzaBoyutFiyat, sayac, ekMalzemelerFiyat]);
 
   useEffect(() => {
-    if (
-      formData.isim.trim().length >= 3 &&
-      formData.ekMalzemeler.length >= 4 &&
-      formData.ekMalzemeler.length <= 10 &&
-      (formData.boyutSec == "Küçük" ||
-        formData.boyutSec == "Orta" ||
-        formData.boyutSec == "Büyük")
-    ) {
+    const isimValid = formData.isim.trim().length >= 3;
+    const boyutValid =
+      formData.boyutSec === "Küçük" ||
+      formData.boyutSec === "Orta" ||
+      formData.boyutSec === "Büyük";
+
+    const hamurValid =
+      formData.hamurSec === "İnce" ||
+      formData.hamurSec === "Orta" ||
+      formData.hamurSec === "Kalın";
+
+    const malzemeValid =
+      formData.ekMalzemeler.length >= 4 && formData.ekMalzemeler.length <= 10;
+
+    if (isimValid && boyutValid && hamurValid && malzemeValid) {
       setIsValid(true);
     } else {
       setIsValid(false);
@@ -135,7 +142,7 @@ export default function OrderPage() {
     axios
       .post("https://reqres.in/api/pizza", formData)
       .then((response) => {
-        history.push("/OrderCopmletePage");
+        history.push("/OrderCompletePage");
         setFormData(initalValues);
       })
       .catch((err) => {
@@ -146,8 +153,9 @@ export default function OrderPage() {
   return (
     <div className="all">
       <header className="orderPizza">
-        <img src="./public/images/logo.svg"></img>
-        <nav style={{ display: "flex", gap: "15px", padding: "10px 0" }}>
+        <nav>
+          <img src="./public/images/logo.svg"></img>
+
           <a className="ustNava" href="/">
             Ana Sayfa
           </a>
@@ -323,9 +331,14 @@ export default function OrderPage() {
                         <p>Toplam: {toplamFiyat}</p>
                       </div>
                       <div className="sipButton">
-                        <Button className="sipVerButon" disabled={!isValid}>
-                          Sipariş Ver
-                        </Button>
+                        <Link to="/complete">
+                          <button
+                            disabled={!isValid}
+                            className="siparis-button"
+                          >
+                            Sipariş Ver
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
