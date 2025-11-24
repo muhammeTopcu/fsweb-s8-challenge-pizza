@@ -15,7 +15,7 @@ export default function MainPage() {
             <span>PIZZA,</span> <span>DOYURUR</span>
           </p>
 
-          {/* Sayfa geçişi için Link kullanımı */}
+          
           <Link className="header-button" to="/Order">
             ACIKTIM
           </Link>

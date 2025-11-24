@@ -136,20 +136,6 @@ export default function OrderPage() {
 
   const history = useHistory();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (!isValid) return;
-    axios
-      .post("https://reqres.in/api/pizza", formData)
-      .then((response) => {
-        history.push("/OrderCompletePage");
-        setFormData(initalValues);
-      })
-      .catch((err) => {
-        console.warn(err);
-      });
-  };
-
   return (
     <div className="all">
       <header className="orderPizza">
@@ -185,7 +171,7 @@ export default function OrderPage() {
               <span style={{ display: "inline-block" }}>200</span>
             </div>
             <Form className="form" onSubmit={handleSubmit}>
-              <FormText className="formtext">
+              <FormText className="formText">
                 Frontent Dev olarak hala position:absolute kullanıyorsan bu çok
                 acı pizza tam sana göre. Pizza, domates, peynir ve genellikle
                 çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel
@@ -279,7 +265,7 @@ export default function OrderPage() {
                 <FormGroup check>
                   <label>Ek Malzemeler</label>
                   <FormText className="formText1">
-                    En Fazla 10 malzeme seçebilirsiniz. 5₺
+                    En fazla 10 en az 4 malzeme seçmelisiniz. 5₺
                   </FormText>
 
                   {malzemelerArr.map((malzeme) => (
